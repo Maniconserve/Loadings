@@ -26,11 +26,11 @@ namespace Loadings
 			var dbContext = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
 			dbContext.Database.EnsureCreated();
 
-			Console.WriteLine("=== Eager Loading ===");
-			EagerLoading(dbContext);
+			//Console.WriteLine("=== Eager Loading ===");
+			//EagerLoading(dbContext);
 
-			Console.WriteLine("\n=== Lazy Loading ===");
-			LazyLoading(dbContext);
+			//Console.WriteLine("\n=== Lazy Loading ===");
+			//LazyLoading(dbContext);
 
 			Console.WriteLine("\n=== Explicit Loading ===");
 			ExplicitLoading(dbContext);
